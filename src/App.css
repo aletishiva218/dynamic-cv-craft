@@ -37,3 +37,49 @@ a[href^="#"] {
 ::-webkit-scrollbar-thumb:hover {
   background: #38b000;
 }
+
+/* Section title styling */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004b23;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #38b000;
+}
+
+/* Project dialog animations */
+@keyframes dialog-fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-state="open"] .DialogContent {
+  animation: dialog-fade-in 0.3s ease-out;
+}
+
+/* Button styles */
+.btn-outline {
+  border: 2px solid #004b23;
+  color: #004b23;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #004b23;
+  color: white;
+}
