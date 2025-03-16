@@ -1,7 +1,7 @@
 
 import { 
   Code, Server, Database, GitBranch, 
-  Monitor, Terminal, Docker, Globe 
+  Monitor, Terminal, Boxes, Globe 
 } from 'lucide-react';
 
 const SkillsSection = () => {
