@@ -29,7 +29,7 @@ const ScrollToTop = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.button
-          className="fixed bottom-8 right-8 bg-portfolio-green text-white p-4 rounded-full shadow-lg z-50 hover:bg-portfolio-lightGreen transition-colors duration-300"
+          className="fixed bottom-8 right-8 bg-portfolio-blue text-white p-4 rounded-full shadow-lg z-50 hover:bg-portfolio-lightBlue transition-colors duration-300"
           onClick={scrollToTop}
           initial={{ opacity: 0, scale: 0, y: 100 }}
           animate={{ 
@@ -45,7 +45,7 @@ const ScrollToTop = () => {
           }}
           whileHover={{ 
             scale: 1.1,
-            boxShadow: "0 10px 30px rgba(56, 176, 0, 0.3)"
+            boxShadow: "0 10px 30px rgba(59, 130, 246, 0.3)"
           }}
           whileTap={{ scale: 0.9 }}
           transition={{ duration: 0.3 }}

@@ -64,11 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				portfolio: {
-					green: '#004b23',
-					lightGreen: '#38b000',
+					blue: '#1e40af',
+					lightBlue: '#3b82f6',
+					accent: '#60a5fa',
 					offWhite: '#f8f9fa',
-					darkGray: '#343a40',
-					gray: '#6c757d'
+					darkGray: '#1e293b',
+					gray: '#64748b'
 				}
 			},
 			fontFamily: {
