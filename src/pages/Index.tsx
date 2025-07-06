@@ -27,7 +27,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <AnimatedCursor />
+      <AnimatedCursor3D />
       <AnimatedBackground />
       <NavBar />
       <HeroSection />

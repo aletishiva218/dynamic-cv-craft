@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { 
   Code, Server, Database, Monitor
 } from 'lucide-react';
-import SimpleDonutChart from './SimpleDonutChart';
+import Chart3D from './Chart3D';
 
 const AnimatedSkillsSection = () => {
   const ref = useRef(null);
@@ -95,7 +95,7 @@ const AnimatedSkillsSection = () => {
           animate={isInView ? "visible" : "hidden"}
         >
           {skillCategories.map((category, index) => (
-            <SimpleDonutChart
+            <Chart3D
               key={category.title}
               title={category.title}
               data={category.skills}

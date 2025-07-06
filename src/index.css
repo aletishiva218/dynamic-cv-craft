@@ -7,34 +7,64 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    /* Professional Clerk-style Design System */
+    
+    /* Base Colors */
+    --background: 251 251 252;
+    --foreground: 18 21 33;
+    --card: 255 255 255;
+    --card-foreground: 18 21 33;
+    --popover: 255 255 255;
+    --popover-foreground: 18 21 33;
+    
+    /* Primary Brand Colors */
+    --primary: 79 70 229;  /* Professional purple */
+    --primary-foreground: 255 255 255;
+    --primary-hover: 67 56 202;
+    --primary-light: 238 242 255;
+    
+    /* Secondary Colors */
+    --secondary: 243 244 246;
+    --secondary-foreground: 75 85 99;
+    --secondary-hover: 229 231 235;
+    
+    /* Neutral Grays */
+    --muted: 249 250 251;
+    --muted-foreground: 107 114 128;
+    --accent: 243 244 246;
+    --accent-foreground: 18 21 33;
+    
+    /* Status Colors */
+    --success: 34 197 94;
+    --success-foreground: 255 255 255;
+    --warning: 245 158 11;
+    --warning-foreground: 255 255 255;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    
+    /* Borders & Inputs */
+    --border: 229 231 235;
+    --input: 229 231 235;
+    --ring: 79 70 229;
+    
+    /* 3D Chart Colors */
+    --chart-1: 79 70 229;   /* Primary purple */
+    --chart-2: 34 197 94;   /* Success green */
+    --chart-3: 59 130 246;  /* Blue */
+    --chart-4: 245 158 11;  /* Warning amber */
+    --chart-5: 239 68 68;   /* Destructive red */
+    
+    /* Professional Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
@@ -48,33 +78,44 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 11 14 20;
+    --foreground: 248 250 252;
+    --card: 15 20 25;
+    --card-foreground: 248 250 252;
+    --popover: 15 20 25;
+    --popover-foreground: 248 250 252;
+    
+    --primary: 139 92 246;
+    --primary-foreground: 255 255 255;
+    --primary-hover: 124 58 237;
+    --primary-light: 30 27 75;
+    
+    --secondary: 31 41 55;
+    --secondary-foreground: 156 163 175;
+    --secondary-hover: 55 65 81;
+    
+    --muted: 17 24 39;
+    --muted-foreground: 156 163 175;
+    --accent: 31 41 55;
+    --accent-foreground: 248 250 252;
+    
+    --success: 34 197 94;
+    --warning: 245 158 11;
+    --destructive: 239 68 68;
+    
+    --border: 31 41 55;
+    --input: 31 41 55;
+    --ring: 139 92 246;
+    
+    --chart-1: 139 92 246;
+    --chart-2: 34 197 94;
+    --chart-3: 59 130 246;
+    --chart-4: 245 158 11;
+    --chart-5: 239 68 68;
+    
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -102,31 +143,96 @@
 }
 
 @layer components {
+  /* Professional Navigation */
   .nav-link {
-    @apply relative cursor-pointer text-portfolio-darkGray hover:text-portfolio-blue transition-colors duration-300 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-portfolio-blue after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+    @apply relative cursor-pointer text-foreground/80 hover:text-primary transition-colors duration-300 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
   }
 
+  /* Professional Buttons */
   .btn-primary {
-    @apply bg-portfolio-blue text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-all duration-300 shadow-md hover:shadow-lg;
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium;
   }
 
   .btn-outline {
-    @apply border-2 border-portfolio-blue text-portfolio-blue px-6 py-2 rounded-md hover:bg-portfolio-blue hover:text-white transition-all duration-300;
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-medium;
   }
 
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:bg-secondary-hover transition-all duration-300 font-medium;
+  }
+
+  /* Professional Section Titles */
   .section-title {
-    @apply text-3xl font-bold mb-8 text-portfolio-darkGray relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-portfolio-lightBlue after:bottom-0 after:left-0 after:rounded-full after:-mb-2;
+    @apply text-4xl font-bold mb-8 text-foreground relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-primary after:bottom-0 after:left-0 after:rounded-full after:-mb-2;
+  }
+
+  /* Card Components */
+  .card-professional {
+    @apply bg-card text-card-foreground rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50;
   }
 
   .skill-item {
-    @apply flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1;
+    @apply flex items-center gap-3 bg-card p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-border/30;
   }
 
   .project-card {
-    @apply bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2;
+    @apply bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-border;
   }
 
+  /* Contact Elements */
   .contact-icon {
-    @apply h-12 w-12 text-portfolio-blue bg-white p-2 rounded-full shadow-md;
+    @apply h-12 w-12 text-primary bg-primary/10 p-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300;
   }
+
+  /* Glass Morphism Effects */
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    @apply rounded-xl shadow-xl;
+  }
+
+  /* 3D Interactive Elements */
+  .element-3d {
+    transform-style: preserve-3d;
+    @apply transition-transform duration-300;
+  }
+
+  .element-3d:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateZ(10px);
+  }
+
+  /* Professional Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Custom cursor styles */
+  .custom-cursor-area {
+    cursor: none;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+/* Hide default cursor on interactive elements */
+body.custom-cursor {
+  cursor: none;
+}
+
+body.custom-cursor * {
+  cursor: none !important;
 }
