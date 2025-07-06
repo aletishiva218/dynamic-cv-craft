@@ -10,7 +10,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import AnimatedSkillsSection from "@/components/AnimatedSkillsSection";
 import Preloader from "@/components/Preloader";
-import AnimatedCursor from "@/components/AnimatedCursor";
+import AnimatedCursor3D from "@/components/AnimatedCursor3D";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import ScrollToTop from "@/components/ScrollToTop";
 
